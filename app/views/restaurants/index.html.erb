@@ -1,7 +1,12 @@
 <h1>Restaurants</h1>
 
 <ul>
-<% @restaurants.each do |restaurant| %>
-  <%= link_to restaurant.name, restaurant_path(restaurant) %>
-<% end %>
+  <% @restaurants.each do |restaurant| %>
+    <%= link_to restaurant.name, restaurant_path(restaurant) %>
+  <% end %>
 </ul>
+
+<%= link_to "add new restaurant", new_restaurant_path %>
+
+
+<%# route, controller, view %>
